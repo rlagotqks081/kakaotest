@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+
+        <EditText
+            android:id="@+id/id_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="@string/id"
+            android:minHeight="48dp" />
+
+
+        <EditText
+            android:id="@+id/password_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:minHeight="48dp" />
+
+
+        <Button
+            android:id="@+id/id_login_button"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/login" />
+
+
+
+
+        <Button
+            android:id="@+id/email_login_button"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/signin_email" />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/google_sign_in_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/signin_google"
+            android:text="@string/signin_google"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/kakao_sign_in_button"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/signin_google"
+            android:text="@string/signin_kakao"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/tmapViewbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="map test btn"/>
+
+    </LinearLayout>
+
+
+</layout>
